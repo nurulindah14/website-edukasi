@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/video.css" />
+  </head>
+  <body>
+    <nav class="navbar-wrapper">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="/assets/images/LOGO READIFY.ID.png" alt="READIFY.ID" />
+        </div>
+        <div class="navbar-links">
+          <div class="links">
+            <ul>
+              <li><a href="/index.html">Beranda</a></li>
+              <li><a href="/about.html">About me</a></li>
+              <li><a href="/video.html">Video</a></li>
+              <li><a href="/info-grafis.html">Infografis</a></li>
+              <li><a href="/info-beasiswa.html">Beasiswa</a></li>
+              <li><a href="/course.html">Course</a></li>
+            </ul>
+          </div>
+          <button class="burger-icon" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" class="home-wrapper">
+      <div class="home-container">
+        <div class="home-heading">
+          <h1>
+            Menggengam <span class="literasi">Pendidikan Literasi</span> dengan Gaya
+            Digital!
+          </h1>
+          <div class="home-content">
+            <p>Menjelajahi inti pendidikan melalui literasi digital<br>sebagai respons terhadap dinamika Tantangan Era Teknologi.</p>
+            <br><p><br/><em>Belajar virtual Hidupkan Pengetahuan, Mengudara dalam Digital.</em></p>
+          </div>
+        </div>
+        <div class="home-image">
+          <img src="/assets/images/herro.jpeg" alt="herro Image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="grafik-wrapper">
+      <div class="grafik-container" id="grafikContent">
+      </div>
+    </div>
+
+    <div id="video" class="video-pembelajaran-container">
+      <div class="heading-section">
+        <h2>Video Pembelajaran</h2>
+        <p>Berikut video pembelajaran terbaru yang mungkin kamu suka</p> 
+      </div>
+      <div class="video-container">
+        <div class="main-video" id="mainVideo">
+        </div>
+        <div class="secondary-video" id="secondaryVideo">
+        </div>
+      </div>
+
+      <a href="/video.html" class="lihat-semua"> Lihat Semua -> </a>
+    </div>
+
+    <div id="info-grafis" class="info-grafis">
+      <div class="wrapper">
+        <div class="header">
+          <h3>
+            <span class="info">Infografis Terbaru </span> <br>Rekomendasi infografis yang tidak boleh kamu lewatkan</h3>
+          <!-- <p>Rekomendasi infografis yang tidak boleh kamu lewatkan</p> -->
+        </div>
+        <div class="container" id="infoGrafis">
+        </div>
+        <div class="footer">
+          <a href="/info-grafis.html" class="lihat-semua"> Lihat Semua -> </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-beasiswa" class="info-beasiswa">
+      <div class="header">
+        <h3>Info Beasiswa</h3>
+        <p>Adapun beberapa beasiswa yang bisa kamu coba</p>
+      </div>
+      <div class="container" id="infoBeasiswa">
+      </div>
+      <div class="footer">
+        <a href="/info-beasiswa.html" class="lihat-semua"> Lihat Semua -> </a>
+      </div>
+    </div>
+
+    <div id="info-course" class="course-wrapper">
+      <div class="info-beasiswa">
+        <div class="header">
+          <!-- <h3>Info Course</h3> -->
+          <!-- <p>Adapun beberapa beasiswa yang bisa kamu coba</p> -->
+          <h3> 
+            <span class="kursus">Info Course </span> <br>Adapun beberapa course yang bisa kamu coba<h3>
+        </div>
+        <div class="container" id="infoCourse">
+        </div>
+        <div class="footer">
+          <a href="/course.html" class="lihat-semua"> Lihat Semua -> </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="footer-wrapper">
+      <div class="footer-container">
+        <div class="icons">
+          <div class="icon">
+            <svg
+              class="svg-inline--fa fa-github fs-3 orange p-2"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="github"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path>
+            </svg>
+          </div>
+          
+          <div class="icon">
+            <svg class="svg-inline--fa fa-instagram fs-3 orange p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+              </path>
+            </svg>
+          </div>
+
+          <div class="icon">
+            <svg class="svg-inline--fa fa-twitter fs-3 orange p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+              </path>
+            </svg>
+          </div>
+
+          <div class="icon">
+            <svg class="svg-inline--fa fa-linkedin fs-3 orange p-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="description">
+          <span class="logo">Readify.id</span> adalah sebuah platform digital inovatif yang didesain 
+          khusus untuk meningkatkan literasi digital dikalangan masyarakat 
+          dengan menyajikan konten yang kaya dan interaktif, Readify memungkinkan pengguna untuk 
+          mengembangkan pemahaman mendalam tentang perkembangan teknologi 
+          dan cara pemanfaatannya secara kreatif.
+        </div>
+
+        <div class="copy-right">Copyright by <b>Nurul Indah Amalia</b> 2024 © All right Reversed</div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-content" id="modalContent">
+          <!-- Video details will be dynamically added here -->
+        </div>
+        <button class="close" onclick="closeModal()">
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            id="svg2"
+            height="25"
+            width="25"
+            sodipodi:docname="close_icon_grey.svg"
+            inkscape:export-filename="D:\Загрузки\close_icon_black2.svg.png"
+            inkscape:export-xdpi="72.959999"
+            inkscape:export-ydpi="72.959999"
+            inkscape:version="0.92.3 (2405546, 2018-03-11)"
+          >
+            <sodipodi:namedview
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1"
+              objecttolerance="10"
+              gridtolerance="10"
+              guidetolerance="10"
+              inkscape:pageopacity="0"
+              inkscape:pageshadow="2"
+              inkscape:window-width="1366"
+              inkscape:window-height="706"
+              id="namedview3731"
+              showgrid="false"
+              inkscape:zoom="15.245222"
+              inkscape:cx="5.6822049"
+              inkscape:cy="12.495936"
+              inkscape:window-x="-8"
+              inkscape:window-y="-8"
+              inkscape:window-maximized="1"
+              inkscape:current-layer="imagebot_2"
+            />
+            <defs id="defs13" />
+            <metadata id="imagebot_6">
+              image/svg+xml<rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type
+                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                  />
+                  <dc:title />
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <g
+              transform="translate(3.9661017,3.5677966)"
+              id="imagebot_2"
+              label="Layer 1"
+            >
+              <path
+                inkscape:connector-curvature="0"
+                stroke-miterlimit="4"
+                d="M -2.5783352e-4,-0.00146808 17.435473,18.212367"
+                id="imagebot_5"
+                style="
+                  opacity: 1;
+                  fill: #5f6368;
+                  stroke: #5f6368;
+                  stroke-width: 3.23161912;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 4;
+                  fill-opacity: 1;
+                  stroke-opacity: 1;
+                "
+              />
+              <path
+                inkscape:connector-curvature="0"
+                stroke-miterlimit="4"
+                d="M -2.5783352e-4,18.212367 17.435473,-0.00146808"
+                id="imagebot_4"
+                style="
+                  opacity: 1;
+                  fill: #5f6368;
+                  stroke: #5f6368;
+                  stroke-width: 3.23161912;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 4;
+                  fill-opacity: 1;
+                  stroke-opacity: 1;
+                "
+              />
+              <title id="title9">Layer 1</title>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Get the current page URL
+      var currentPageUrl = window.location.pathname;
+
+      // Select all links in the navigation
+      var links = document.querySelectorAll('.links a');
+
+      // Loop through the links
+      links.forEach(function (link) {
+        console.log(link.getAttribute('href'), currentPageUrl);
+        // Compare the link's href with the current page URL
+        if (link.getAttribute('href') === currentPageUrl) {
+          // Add the "active" class to the matching link
+          link.classList.add('active');
+        }
+      });
+
+      let isNavOpen = false;
+
+      function toggleNav() {
+        const linksContainer = document.querySelector(
+          '.navbar-wrapper .navbar-container .links'
+        );
+
+        if (isNavOpen) {
+          linksContainer.classList.remove('active');
+        } else {
+          linksContainer.classList.add('active');
+        }
+
+        isNavOpen = !isNavOpen;
+      }
+
+      const GRAPHICS_COUNTER = [
+        {
+          value: 5,
+          title: 'Video Pembelajaran',
+          icon: `<svg
+              class="svg-inline--fa fa-video fs-1 orange"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="video"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              data-fa-i2svg=""
+            >
+              <path
+                fill="currentColor"
+                d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"
+              ></path>
+            </svg>`,
+        },
+        {
+          value: 5,
+          title: 'Infografis menarik',
+          icon: `<svg 
+              class="svg-inline--fa fa-window-restore fs-1 orange" 
+              aria-hidden="true" 
+              focusable="false" 
+              data-prefix="fas" 
+              data-icon="window-restore" 
+              role="img" 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 512 512" 
+              data-fa-i2svg=""
+            >
+              <path fill="currentColor" 
+              d="M432 64H208c-8.8 0-16 7.2-16 16V96H128V80c0-44.2 35.8-80 80-80H432c44.2 0 80 35.8 80 80V304c0 44.2-35.8 80-80 80H416V320h16c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16zM0 192c0-35.3 28.7-64 64-64H320c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192zm64 32c0 17.7 14.3 32 32 32H288c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32 14.3-32 32z"
+              ></path>
+              </svg>`,
+        },
+        {
+          value: 5,
+          title: 'Info Beasiswa',
+          icon: `<svg 
+              class="svg-inline--fa fa-graduation-cap fs-1 orange" 
+              aria-hidden="true" 
+              focusable="false" 
+              data-prefix="fas" 
+              data-icon="graduation-cap" 
+              role="img" 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 640 512" data-fa-i2svg=""
+            >
+              <path fill="currentColor" 
+              d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+              ></path>
+              </svg>`,
+        },
+        {
+          value: 5,
+          title: 'Info Course',
+          icon: `<svg 
+          class="svg-inline--fa fa-graduation-cap fs-1 orange" 
+          aria-hidden="true" 
+          focusable="false" 
+          data-prefix="fas" 
+          data-icon="graduation-cap" 
+          role="img" 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 640 512" data-fa-i2svg=""
+          >
+          <path fill="currentColor" 
+          d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+          ></path></svg>`,
+        },
+      ];
+
+      function renderGraphicsContent() {
+        const videosContainer = document.getElementById('grafikContent');
+        videosContainer.innerHTML = '';
+
+        GRAPHICS_COUNTER.forEach((item) => {
+          const videoCard = document.createElement('div');
+          videoCard.className = 'grafik-item';
+
+          videoCard.innerHTML = `
+                  <div class="grafik-icon">
+                    ${item.icon}
+                  </div>
+                  <div class="grafik-detail">
+                    <h3>${item.value}+</h3>
+                    <p>${item.title}</p>
+                  </div>
+                `;
+
+          videosContainer.appendChild(videoCard);
+        });
+      }
+
+      renderGraphicsContent();
+
+      const MAIN_VIDEO = [
+        { 
+          title: 
+          'Jalur Belajar Web Developer Untuk Tahun 2024',
+          source: 'Web Programming UNPAS',
+          videoUrl: 'https://www.youtube.com/embed/OEhw6GqQDts',
+        },
+      ]
+
+      const SECONDARY_VIDEO = [
+      {
+          title: 'Banyak negara krisis, ekonomi dunia kolaps? arisan jadi solusi? hutang global | learning by googling',
+          source: 'Sepulang Sekolah',
+          videoUrl: 'https://www.youtube.com/embed/VtxgO6F9pzA?si=Ega-Nw23Wano1nW_',
+        },
+        {
+          title: 'IPA Kelas 10 - Notasi Ilmiah & Angka Penting | GIA Academy',
+          source: 'GIA Academy',
+          videoUrl: 'https://www.youtube.com/embed/ApFvxR4tZP4?si=OB1JBPl4P4xvYt2u',
+        },
+        {
+          title: 'Bisa Pilih Hingga 4 Prodi | Aturan Baru & Tanggal Penting SNBT 2024, SNPMB BPPP',
+          source: 'Ruang Belajar Millais',
+          videoUrl: 'https://www.youtube.com/embed/SBNsEoyji1o',
+        },
+      ]
+
+      function openVideoModal(video) {
+        const modalContent = document.getElementById('modalContent');
+        modalContent.innerHTML = `
+                <h2>${video.title}</h2>
+                <p>Sumber: ${video.source}</p>
+                <iframe height="300" src="${video.videoUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            `;
+
+        const modal = document.getElementById('videoModal');
+        modal.style.display = 'flex';
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('videoModal');
+        modal.style.display = 'none';
+      }
+
+      function renderMainVideo() {
+        const videosContainer = document.getElementById('mainVideo');
+        videosContainer.innerHTML = '';
+
+        MAIN_VIDEO.forEach((item) => {
+          const videoCard = document.createElement('div');
+          videoCard.className = 'main-video-item';
+
+          // Add click event to each video card
+          videoCard.addEventListener('click', function () {
+            openVideoModal(item);
+          });
+
+          videoCard.innerHTML = `
+          <div class="main-video-iframe">
+              <iframe
+                width="560"
+                height="480"
+                src="${item.videoUrl}"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a class="title">${item.title}</a>
+            <p class="source">${item.source}</p>
+                `;
+
+          videosContainer.appendChild(videoCard);
+        });
+      }
+
+      renderMainVideo();
+
+      function renderSecondaryVideo() {
+        const videosContainer = document.getElementById('secondaryVideo');
+        videosContainer.innerHTML = '';
+
+        SECONDARY_VIDEO.forEach((item) => {
+          const videoCard = document.createElement('div');
+          videoCard.className = 'secondary-video-item';
+
+          // Add click event to each video card
+          videoCard.addEventListener('click', function () {
+            openVideoModal(item);
+          });
+
+          videoCard.innerHTML = `
+          <div class="secondary-video-iframe">
+              <iframe
+                width="240"
+                height="160"
+                src="${item.videoUrl}"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="secondary-video-content">
+              <a class="title"
+                >${item.title}</a
+              >
+              <p class="source">${item.source}</p>
+            </div>
+                `;
+
+          videosContainer.appendChild(videoCard);
+        });
+      }
+
+      renderSecondaryVideo();
+
+      const INFO_GRAFIS = [
+        {
+          title: 'Semua Bermula Dari Sampah Makanan Kita',
+          author: 'Apriliana Lutviana Dewi',
+          thumbnail: '/assets/images/grafis1.jpeg',
+          description:
+          `Infografis "Semua Bermula dari Sampah Makanan Kita” ini membahas tentang masalah sampah makanan di Indonesia dan dunia. Infografis ini dimulai dengan menjelaskan bahwa Indonesia menempati peringkat ke-2 sebagai negara penyumbang sampah makanan terbanyak di dunia. Total sampah makanan yang dihasilkan setiap individu per tahunnya mencapai 28 kilogram. Kemudian menjelaskan bahwa sampah makanan memiliki dampak negatif yang signifikan terhadap lingkungan dan manusia. Sampah makanan dapat menimbulkan efek rumah kaca, yang dapat menyebabkan perubahan iklim. Selain itu, sampah makanan juga dapat menyebabkan malnutrisi, karena makanan yang terbuang bisa saja dimakan oleh orang-orang yang membutuhkan. Infografis ini diakhiri dengan mengajak masyarakat untuk bersama-sama mengurangi sampah makanan. Dengan mengurangi sampah makanan, kita dapat membantu mengurangi dampak negatif terhadap lingkungan dan manusia.`,
+      },
+        {
+          title: 'Kombucha Ekstrak Rosella',
+          author: 'Ayya',
+          thumbnail: '/assets/images/grafis2.jpeg',
+          description:
+            `Infografis ini berjudul "Kombucha Ekstrak Rosella" membahas tentang cara membuat kombucha ekstrak rosella, serta manfaatnya bagi kesehatan. Infografis ini dimulai dengan menjelaskan tentang kombucha, yaitu minuman fermentasi yang terbuat dari teh, gula, dan bakteri. Kombucha memiliki rasa asam dan manis, serta mengandung berbagai macam vitamin, mineral, dan asam organik. Infografis ini kemudian menjelaskan cara membuat kombucha ekstrak rosella. Caranya adalah dengan membuat larutan teh rosella dan gula, kemudian menambahkan scoby (Symbiotic Culture of Bacteria and Yeast) dan membiarkannya fermentasi selama 7-12 hari. Infografis ini diakhiri dengan mengajak masyarakat untuk mencoba membuat kombucha ekstrak rosella di rumah.`,
+        },
+        {
+          title: 'Cegah Stunting',
+          author: 'Hilkj Hdje',
+          thumbnail: '/assets/images/cegah stunting.jpeg',
+          description:
+            'Inovasi 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,',
+        },
+        {
+          title: 'Fun Facts About Zoomerss',
+          author: 'DefAndArt',
+          thumbnail: '/assets/images/grafis4.jpeg',
+          description:
+          'Infografis berjudul "Fun Facts About Zoomers" menampilkan berbagai fakta tentang generasi Z, yang lahir sekitar tahun 1997 hingga 2012. Berdasarkan informasi yang tertera dalam infografis tersebut, dapat disimpulkan bahwa generasi Z adalah generasi yang sangat digital dan melek teknologi. Mereka juga sangat aktif di media sosial dan menggunakan internet untuk mencari informasi dan melakukan transaksi. Dengan memahami generasi Z, pelaku bisnis dapat mengembangkan strategi bisnis yang lebih efektif dan relevan dengan kebutuhan mereka.',
+        },
+      ];
+
+      function openInfoGrafisModal(infographic) {
+        const modalContent = document.getElementById('modalContent');
+        modalContent.innerHTML = `
+                <img src="${infographic.thumbnail}" alt="">
+                <h2>${infographic.title}</h2>
+                <p>Sumber: ${infographic.author}</p>
+                <p>${infographic.description}</p>
+            `;
+
+        const modal = document.getElementById('videoModal');
+        modal.style.display = 'flex';
+      }
+
+
+      function renderInfoGrafis() {
+        const videosContainer = document.getElementById('infoGrafis');
+        videosContainer.innerHTML = '';
+
+        INFO_GRAFIS.forEach((item) => {
+          const videoCard = document.createElement('div');
+          videoCard.className = 'info-grafis-card';
+
+          // Add click event to each video card
+          videoCard.addEventListener('click', function () {
+            openInfoGrafisModal(item);
+          });
+
+          videoCard.innerHTML = `
+          <div class="info-grafis-image">
+              <img src="${item.thumbnail}" />
+            </div>
+            <div class="info-grafis-description">
+              <h5>${item.title}</h5>
+              <p>Pengarang: ${item.author}</p>
+            </div>
+                `;
+
+          videosContainer.appendChild(videoCard);
+        });
+      }
+
+      renderInfoGrafis();
+
+      const INFO_BEASISWA = [
+            {
+                title: "Beasiswa Pendidikan",
+                organizer: "Prestasi Kita",
+                thumbnail: "/assets/images/bea1.jpeg",
+                description: "Beasiswa Pendidikan kembali membuka pintu menuju masa depan cerahmu melalui Program Beasiswa Pendidikan Prestasi Batch 5 loh. Peroleh kesempatan pendidikan terbaik dan wujudkan cita-citamu bersama program beasiswa ini. Buat kamu Pelajar Aktif, Gap Year, dan Mahasiswa Aktif, di seluruh Indonesia dapat mendaftarkan diri di Program Beasiswa ini.",
+            },
+            {
+                title: "Beasiswa Data Print",
+                organizer: "Data Print",
+                thumbnail: "/assets/images/bea2.jpeg",
+                description: "Beasiswa DataPrint kembali diadakan pada tahun ini loh. Pendaftaran beasiswa akan diadakan per 2 bulanan, terbagi dalam 4 periode. Harap diingat harus membuat video essay (seusai pendapat pribadi) yang baik sesuai dengan tema yang ditentukan dan mengisi formulir dengan data yang tepat dan benar Cek selengkanya www.beasiswadataprint.com.",
+            },
+            {
+                title: "Beasiswa Anak Teladan",
+                organizer: "Rumah Bina Cendikia",
+                thumbnail: "/assets/images/bea3.jpeg",
+                description: "Beasiswa Anak Teladan Indonesia (BATI) 2024 telah hadir! Untuk kamu SMP/MTs lulusan terbaik di Indonesia yang berkeinginan melanjutkan studi berkualitas dan ingin menguasai ilmu pengetahuan yuk segera daftar di Beasiswa Anak Teladan Indonesia (BATI) 2024. Daftarkan melalui link berikut https://yayasanrubic.org/BATI.",
+            },
+            {
+                title: "Beasiswa Cendikia Muda",
+                organizer: "Youth Space Inovation ",
+                thumbnail: "/assets/images/bea4.jpeg",
+                description: "Youth Space Inovation menghadirkan Beasiswa Cendekia Muda #2 loh. bagi siswa hingga mahasiswa S2 yang memiliki kendala dalam biaya pendidikannya bisa banget untuk mendaftar dengan syarat yang mudah dan tanpa dipungut biaya. Jangan sampai lewatkan kesempatan ini. Baca panduan lengkap di: www.bit.ly/PANDUANBCM2 dan Daftar GRATIS di: www.bit.ly/DAFTARBCM2.",
+            },
+            // Add more dummy data as needed
+        ]
+
+        function openBesiswawModal({thumbnail, title, organizer, description}) {
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <img src="${thumbnail}" alt="">
+                <h2>${title}</h2>
+                <p>Sumber: ${organizer}</p>
+                <p>${description}</p>
+            `;
+
+            const modal = document.getElementById('videoModal');
+            modal.style.display = 'flex';
+        }
+
+      function renderInfoBeasiswa() {
+        const videosContainer = document.getElementById('infoBeasiswa');
+        videosContainer.innerHTML = '';
+
+        INFO_BEASISWA.forEach((item) => {
+          const videoCard = document.createElement('div');
+          videoCard.className = 'beasiswa-card';
+
+          // Add click event to each video card
+          videoCard.addEventListener('click', function () {
+            openBesiswawModal(item);
+          });
+
+          videoCard.innerHTML = `
+          <div class="beasiswa-image">
+            <img src="${item.thumbnail}" />
+          </div>
+          <div class="beasiswa-description">
+            <div class="header">
+              <h6>${item.title}</h6>
+              <p>Penyelenggara: ${item.organizer}</p>
+            </div>
+            <div class="description">
+              <p>
+                ${item.description}
+              </p>
+            </div>
+            <button class="baca-selengkapnya">Baca Selengkapnya</button>
+          </div>
+                `;
+
+          videosContainer.appendChild(videoCard);
+        });
+      }
+
+      renderInfoBeasiswa();
+
+      const INFO_COURSE = [
+      {
+                title: "Data Analyst",
+                organizer: "Digital Skill Sarea",
+                thumbnail: "/assets/images/cr1.jpeg",
+                description: "Data analyst bootcamp termurah, bonus kelas basic dan grammer english! Dengan materi Intro to Data Analysis, Basic Statistic, Data Formatting and Cleansing, SQL, Python, Data Visualisation, dan lainnya. Tentunya dengan benefit Online Live class bersama expert, Real project portofolio, Materi, recording, e-certificate, dan lainya.",
+            },
+            {
+                title: "Microsoft Office Bootcamp",
+                organizer: "Digital Skill Sarea",
+                thumbnail: "/assets/images/cr2.jpeg",
+                description: "Mau siap kerja dengan Microsoft Office? Ingin belajar menggunakannya secara efektif dan efisien? Gabung kelas Microsoft Office sekarang juga promo gratis kelas basic english + python data analyst! Garansi GRATIS mengulang sampai paham! DAFTAR SEKARANG MATERI SUPER LENGKAP! CEK DI WEBSITE kelas.dsarea.com.",
+            },
+            {
+                title: "Digital Marketing Bootcamp",
+                organizer: "Digital Skill Sarea",
+                thumbnail: "/assets/images/cr3.jpeg",
+                description: "Ikut bootcamp digital marketing garansi magang bersertifikat? Omset stagnan? Mau belajar Digital Marketing tapi mahal? Ada jaminan magang dan freelance! Yuk ikut bootcamp Digital Marketing! Diajarin privat digital marketing konsultasi sepuasnya! Hanya untuk 20 orang! Buruan langsung daftar sebelum kehabisan! Daftar langsung belajar!.",
+            },
+            {
+                title: "Kelas Juwara Baru",
+                organizer: "Kelas Bersama",
+                thumbnail: "/assets/images/cr4.jpeg",
+                description: "Panggilan buat kamu yang mau jadi ahli Copywriting! Di kelas intensif ini, Mas Raharja akan memandu kamu melalui dunia Copywriting dengan materi yang lebih dalam dan komprehensif daripada webinar biasa. Kamu akan mempelajari segala hal, mulai dari dasar-dasar hingga teknik-teknik canggih dalam seni menulis yang persuasif.",
+            },
+      ]
+
+      function renderInfoCourse() {
+        const videosContainer = document.getElementById('infoCourse');
+        videosContainer.innerHTML = '';
+
+        INFO_COURSE.forEach((item) => {
+          const videoCard = document.createElement('div');
+          videoCard.className = 'beasiswa-card';
+
+          // Add click event to each video card
+          videoCard.addEventListener('click', function () {
+            openBesiswawModal(item);
+          });
+
+          videoCard.innerHTML = `
+          <div class="beasiswa-card">
+            <div class="beasiswa-image">
+              <img src="${item.thumbnail}" />
+            </div>
+            <div class="beasiswa-description">
+              <div class="header">
+                <h6>${item.title}</h6>
+                <p>Penyelenggara: ${item.organizer}</p>
+              </div>
+              <div class="description">
+                <p>
+                  ${item.description}
+                </p>
+              </div>
+              <button class="baca-selengkapnya">Baca Selengkapnya</button>
+            </div>
+          </div>
+                `;
+
+          videosContainer.appendChild(videoCard);
+        });
+      }
+
+      renderInfoCourse();
+
+    </script>
+  </body>
+</html>
